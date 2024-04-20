@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 //Aquí importo el módulo de series
 import { SerieModule } from './serie/serie.module';
 
+//Debemos también hacer una importación del módulo en el módulo principal de la aplicación
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,8 +18,8 @@ import { SerieModule } from './serie/serie.module';
   //El módulo que importa otro podrá "ver" los elementos que el módulo exporta
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    SerieModule
+    SerieModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

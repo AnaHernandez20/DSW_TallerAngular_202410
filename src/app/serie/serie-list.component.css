@@ -1,0 +1,35 @@
+.personalizada {
+    width: auto;
+    max-width: 80%;
+    margin-left: 80px;
+    border-top: 1px solid #dee2e6;
+    margin-bottom: 0;
+  }
+  
+.name-column {
+    min-width: 200px; /*Para el espacio de Name */
+    white-space: nowrap; /*esto hace que css no me ponga saltos de linea en los titulos de las series*/
+  }
+
+.seasons-column{
+    min-width: 90px; /*Para el espacio de Seasons */
+}
+
+.name-contenido {
+    color: rgb(36, 129, 211);
+  }
+
+.columna-gris{
+    background-color: rgb(242, 242, 242);
+}
+
+.table th, .table td {
+    padding: 12px; /* Me aumenta el padding */
+    height: 50px; 
+  }
+
+
+.promedio{
+    padding-left: 80px;
+    margin-top: 8px;
+  }

@@ -1,0 +1,43 @@
+<!--Esta es la vista de su respectivo componente/controlador-->
+<!--Solo con la parte HTML que se necesita, no todo-->
+
+<div class="row">
+          
+  <!-- Columna de la tabla -->
+  <div class="col-md-5">
+      <table class="table personalizada">
+          <thead>
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col" class="name-column">Name</th>
+                  <th scope="col">Channel</th>
+                  <th scope="col" class="seasons-column">Seasons</th>
+              </tr>
+          </thead>
+      
+        <!--Usamos ciclos dentro de HTML lol-->
+        <!--*ngFor="let iter of coleccion", iter es una variable local al ciclo y -->
+        <!-- coleccion es un atributo que DEBE estar definido en el componente -->
+ 
+        <tr *ngFor="let serie of series">
+          <td style="font-weight: bold"  class="columna-gris">
+            {{serie.id}}
+          </td>
+          <td  class="name-contenido columna-gris">
+            {{serie.name}}
+          </td>
+          <td class="columna-gris">
+            {{serie.channel}}
+          </td>
+          <td class="columna-gris">
+            {{serie.seasons}}
+          </td>
+      </tr>
+
+     
+    </table>
+
+    <p  class="promedio">Seasons average: {{promedioSeasons}}</p>
+
+  </div>
+</div>
