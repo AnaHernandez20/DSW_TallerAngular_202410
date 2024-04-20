@@ -1,5 +1,5 @@
 # Taller Angular
-Este taller fue hecho con [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Esta página web fue hecha con [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
 
 Talleres de la materia Desarrollo de Software en Equipo - Ciclo 2
 
